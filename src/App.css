@@ -1,0 +1,74 @@
+
+
+body {
+  margin: 0;
+  background-color: #eea9d3;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container
+ {
+  max-width: 420px;
+  min-height: 96vh;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+button {
+  font-size: 2rem;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.borrar button {
+  background-color: rgb(199, 249, 255);
+}
+.operaciones button {
+  background-color: rgb(240, 119, 169);
+  width: 100px;
+}
+.numeros button {
+  background-color: #000000;
+  color: #eea9d3;
+}
+
+/* All things Grid, Flexbox, Box Alignment */
+
+.show-input {
+  grid-area: total;
+}
+.borrar {
+  grid-area: modif;
+}
+.operaciones {
+  grid-area: oper;
+}
+.numeros {
+  grid-area: digit;
+}
+
+.show-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.borrar {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.numeros{
+  display: flex;
+  flex-wrap: wrap;
+}
+.numeros button {
+  flex: 1 0 26%;
+}
+.botones{
+  margin-top: 40%;
+}
+.botones2{
+ margin-top: 0;
+ margin-left: 26%;
+}
